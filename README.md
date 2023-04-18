@@ -1,2 +1,2 @@
 # Projects
-This folder contains a few personal projects 
+This repository contains a few personal projects 
