@@ -5,7 +5,7 @@ This repository contains a few personal projects
  ---prediction of poker hand using an iterative approach instead of machine learning approach, because sometimes simple things work!
 
 # Sentiment Analysis on Customer Reviews 
- ---wordclouds to visualize the most talked about topics, textblob to analyze the polarity and sentiment
+ ---collecting the data, using wordclouds to visualize the most talked about topics, textblob to analyze the polarity and sentiment
 
 # Customer Booking Prediction 
  ---exploratory analysis using python, pandas, visualization libraries. Cross validation technique to evalute different classification models and built the best performing model(XGB Classifier)
