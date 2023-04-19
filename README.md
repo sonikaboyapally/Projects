@@ -1,14 +1,18 @@
 # Projects
 This repository contains a few personal projects 
 
-# Poker hand prediciton 
- ---prediction of poker hand using an iterative approach instead of machine learning approach, because sometimes simple things work!
+## Poker hand prediciton 
+ ---Created an algorithm in python for prediction of poker hand for given card information using an iterative approach instead of machine learning approach, because sometimes simple things work better! This approach involved defining the rules of poker and developing an algorithm to evaluate the different types of hands.
 
-# Sentiment Analysis on Customer Reviews 
- ---collecting the data, using wordclouds to visualize the most talked about topics, textblob to analyze the polarity and sentiment
+## Sentiment Analysis on Customer Reviews 
+ ---In order to evaluate the sentiment of customer reviews for an airline, we first need to classify them as positive, negative, or neutral. For this, collected text data on these reviews using web scraping techniques, and then proceeded to clean the data by removing any tick marks, special characters, or other extraneous information. To identify the most frequently mentioned topics in the reviews, created word clouds for visualization purposes. To analyze the sentiment and polarity of the reviews, utilized the TextBlob library to process the cleaned text data. By doing so, we are able to gain insights into the overall sentiment of customers towards the airline. This enables us to identify areas for improvement based on their feedback, which can be used to enhance the airline's performance and customer satisfaction.
 
-# Customer Booking Prediction 
- ---exploratory analysis using python, pandas, visualization libraries. Cross validation technique to evalute different classification models and built the best performing model(XGB Classifier)
+## Customer Booking Prediction 
+ ---The prediction of whether a customer will book an airline based on their flight and preference information was conducted using a dataset. Exploratory data analysis was performed using Python and Pandas, as well as visualization libraries like Seaborn. Cross-validation techniques were utilized to evaluate different classification models and determine the best performing one. An XGB classification model was built for prediction based on the best F1-score. Furthermore, the "feature_importance_" method was employed to identify the features that had the most significant impact on the likelihood of booking. Through these efforts, insights were gained into the factors that are most influential in a customer's decision to book a flight, which can inform marketing and customer retention strategies.
 
-# House Prices Prediction 
- ---The data set contains 72 features!! exploratory data analysis to understand feature importance and correlations between features. Regression model building using XGB Regressor after evaluating a bunch of other regression models. Used ML Pipeline to preprocess the data and training the model.
+## House Prices Prediction 
+ ---The prediction of house prices based on various features, such as the number of bedrooms, bathrooms, basement, exterior material quality,etc, was carried out on a dataset with 72 features. Exploratory data analysis was performed to identify missing values, understand correlations between variables, and drop any highly correlated features(to avoid multicollinearity). Categorical and numerical features were separated and preprocessed accordingly. A regression model was then built using XGB Regressor after evaluating various other regression models. To streamline the process, an ML Pipeline was employed. Through these efforts, the prediction of house prices was made more efficient and accurate.
+ 
+ ## SQL Query to create a view
+  ---Sample Casestudy : A research team submits proposals to a review team, which has several business process workflows for approving or disapproving the proposals. The review team creates business items to review each proposal, and each business item has multiple tasks and subtasks.
+  The provided queries enable the creation of a consolidated view of all relevant data, which can be used for analysis and report generation. This view allows for the analysis of various metrics such as the average time taken to complete tasks and subtasks, the average time taken by a reviewer to finish tasks and subtasks, and other related metrics. These insights can be used by the review team to optimize and improve their business workflows, allowing them to complete tasks more efficiently.
