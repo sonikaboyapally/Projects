@@ -14,6 +14,10 @@ GO
 -- 		 "subtask name 2":{"rev_email":"johndoe@gm.com","analyst_name":"John Doe","start_date":"2016-09-16","end_date":"2016-12-19""status":"Complete"}
 --}
 
+--proposals table contains information such as proposal's number, title, whether a proposal is active/inactive etc.
+--business_items table contains information like business item start date, end date, etc
+--reviewers and researches tables contain personal information 
+
 
 
 -- all completed business items -  tasks & subtasks
