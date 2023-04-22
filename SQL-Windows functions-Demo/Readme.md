@@ -1,4 +1,5 @@
 The SQL queries do the following:
+
   -create a table coder_performance with details like coder_id(i used names though), department, accuracy 
   -show the table just to make sure every thing is correct
   -use windows function to learn the average accuracy of a coder for a particular department
