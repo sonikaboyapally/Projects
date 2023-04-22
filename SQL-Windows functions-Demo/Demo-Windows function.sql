@@ -49,7 +49,7 @@ select
 from
 	coder_performance
 order by
-rank_in_dept;
+department,rank_in_dept;
 
 -- COMMAND ----------
 
