@@ -6,4 +6,6 @@ The SQL queries do the following:
   
   -use windows function to learn the average accuracy of a coder for a particular department
   
+  -rank coders according to their accuracy for each department
+  
   -use windows function to partition by department, sort by accuracy, identify the coder with highest & least accuracy and to find out the range of accuracy values.
