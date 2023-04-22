@@ -31,7 +31,7 @@ select * from coder_performance;
 -- COMMAND ----------
 
 select 
-	distinct(coder_id),
+	distinct(coder_name),
 	department,
 --     accuracy,
 	avg(accuracy) over (partition by  department, coder_name) as avg_acc_per_dept
