@@ -54,19 +54,6 @@ department,rank_in_dept;
 -- COMMAND ----------
 
 select 
-	distinct(coder_name),
-	department,
---     accuracy,
-    avg(accuracy) over (partition by  department, coder_name) as avg_acc,
-	rank() over (partition by  department order by accuracy desc) as rank_in_dept
-from
-	coder_performance
-order by
-rank_in_dept;
-
--- COMMAND ----------
-
-select 
 	coder_name,
 	department,
     accuracy,
