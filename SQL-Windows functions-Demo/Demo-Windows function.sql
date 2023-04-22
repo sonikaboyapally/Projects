@@ -33,7 +33,6 @@ select * from coder_performance;
 select 
 	distinct(coder_name),
 	department,
---     accuracy,
 	avg(accuracy) over (partition by  department, coder_name) as avg_acc_per_dept
 from
 	coder_performance;
@@ -43,8 +42,7 @@ from
 select 
 	distinct(coder_name),
 	department,
---     accuracy,
-    avg(accuracy) over (partition by  department, coder_name) as avg_acc,
+        avg(accuracy) over (partition by  department, coder_name) as avg_acc,
 	rank() over (partition by  department order by accuracy desc) as rank_in_dept
 from
 	coder_performance
@@ -56,11 +54,10 @@ department,rank_in_dept;
 select 
 	coder_name,
 	department,
-    accuracy,
---     avg(accuracy) over (partition by  department, coder_name) as avg_acc,
-	first_value(accuracy) over (partition by  department order by accuracy desc) as highest_acc,
-    last_value(accuracy) over (partition by  department order by accuracy desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) as least_acc,
-    first_value(accuracy) over (partition by  department order by accuracy desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) - last_value(accuracy) over (partition by  department order by accuracy desc) as range_acc
+    	accuracy,
+    	first_value(accuracy) over (partition by  department order by accuracy desc) as highest_acc,
+    	last_value(accuracy) over (partition by  department order by accuracy desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) as least_acc,
+    	first_value(accuracy) over (partition by  department order by accuracy desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) - last_value(accuracy) over (partition by  department order by accuracy desc) as range_acc
     
 from
 	coder_performance
